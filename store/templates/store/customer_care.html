@@ -1,0 +1,43 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block navbar%}
+{% endblock navbar %}
+{% block content %}
+
+<div>
+    <nav class="navbar bg-body-tertiary navbar bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-text">
+            <a class="navbar-brand" href="{% url 'store' %} "><strong>Neo</strong> Customer Care</a>
+            </span>
+        </div>
+    </nav>
+
+    <div class="customer-care">
+        <h1>Customer Care</h1>
+        <p class="cp">Welcome to our Customer Care page. We are here to assist you with any 
+        questions or concerns you may have regarding our products and services.</p><br>
+        <h3>Contact Us</h3>
+        <p class="cp">You can reach our customer care team through the following methods:</p>
+        <ul>
+            <li>Email:<a href="mailto:support@neostore.com"> support@neostore.com</a></li>
+            <li>Phone: +1 (800) 123-4567</li>
+            <li>Live Chat: Available 24/7 on our website</li> 
+        </ul>
+
+        <h3>You can also reach us via social media:</h3>
+        <div class="social-container">
+            <a data-social="Facebook" style="--accent-color:#1877F2;" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a data-social="Twitter" style="--accent-color:black;" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a data-social="Instagram" style="--accent-color:#5851DB;" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a data-social="Pinterest" style="--accent-color:#E60023;" href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+            <a data-social="YouTube" style="--accent-color:#FF0000;" href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a data-social="TikTok" style="--accent-color:black;" href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+            <a data-social="LinkedIn" style="--accent-color:#0A66C2;" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a data-social="WhatsApp" style="--accent-color:#25D366;" href="https://wa.me/1234567890"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </div>
+    
+        
+    </div>
+</div>
+{% endblock content %}
